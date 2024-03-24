@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login🧿</title>
+  <link rel="stylesheet" href="../style/login.css">
+</head>
+
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form id="login-form_registro">
+					<label for="chk" aria-hidden="true">Registrarse</label>
+          <input type='text' id='username_reg' name='username_reg' title='username_reg' placeholder="Nombre Usuario" required />
+					<input type="email" id="email_reg" name="email_reg" title="email_reg" placeholder="Correo Electronico" required>
+          <input type='password' id='password_reg' name='password_reg' title='password_reg' placeholder="Clave" required/>
+					<button type="submit">Registrarse</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form id="login-form-usuario">
+					<label for="chk" aria-hidden="true">Ingresar</label>
+          <input type='text' id='username' name='username' title='username' placeholder="Nombre Usuario" required />
+          <input type='password' id='password' name='password' title='password' placeholder="Clave" required/>
+          <div id="error-message" style="color: red;"></div>
+					<button type="submit">Ingresar</button>
+					<label class="forgot-password">¿Olvidaste tu contraseña?</label>
+				</form> 
+			</div>
+	</div>
+  <script src="../js/login.js"></script>
+</body>
+</html>
+
